@@ -2,7 +2,7 @@
 #include <cstdint> // uint64_t
 #include <vector> // std::vector
 #include <future> // std::async
-
+using namespace std;
 uint64_t fibo(uint64_t n) {
 	uint64_t a_0 = 0;
 	uint64_t a_1 = 1;
