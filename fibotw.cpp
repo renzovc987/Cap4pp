@@ -3,9 +3,7 @@
  #include <vector> // std::vector
  #include <thread> // std::thread
  using namespace std;
- template <
- typename value_t,
- typename index_t>
+ template <typename value_t, typename index_t>
  void fibo(
  value_t n,
  value_t * result) { // <- here we pass the address
@@ -14,8 +12,7 @@
 	 value_t a_1 = 1;
 
 	 for (index_t index = 0; index < n; index++) {
-	 	const value_t tmp = a_0; a_0 = a_
-		1; a_1 += tmp;
+	 	const value_t tmp = a_0; a_0 = a_1; a_1 += tmp;
 	 }
 
  	*result = a_0; // <- here we write the result
