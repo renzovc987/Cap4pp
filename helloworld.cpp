@@ -2,6 +2,9 @@
 #include <vector> // std::vector
 #include <thread> // std::thread
 // this function will be called by the threads (should be void)
+#include <iostream>
+#include <ostream>
+using namespace std;
 void say_hello(uint64_t id) {
  std::cout << "Hello from thread: " << id << std::endl;
 }
