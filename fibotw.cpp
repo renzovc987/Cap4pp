@@ -29,8 +29,7 @@
 
 	 for (auto& thread: threads)
 	 	thread.join();
+	 
 	 for (const auto& result: results)
 	 	std::cout << result << std::endl;
  }
-
-
